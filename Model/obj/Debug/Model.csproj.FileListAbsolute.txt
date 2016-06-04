@@ -1,0 +1,4 @@
+D:\Code\TestAngularjs\Model\bin\Debug\Model.dll
+D:\Code\TestAngularjs\Model\bin\Debug\Model.pdb
+D:\Code\TestAngularjs\Model\obj\Debug\Model.dll
+D:\Code\TestAngularjs\Model\obj\Debug\Model.pdb

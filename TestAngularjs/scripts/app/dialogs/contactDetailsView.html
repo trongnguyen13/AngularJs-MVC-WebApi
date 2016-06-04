@@ -1,0 +1,74 @@
+﻿<div class="content-wrap">
+    <div class="modal-header dialog-header-wait">
+        <h4 class="modal-title">
+            {{title}}
+        </h4>
+    </div>
+    <div class="modal-body">
+        <form name="contactForm" novalidate>
+            <div ng-show="!!modelStatesErrors.length" class="alert alert-danger">
+                <ul>
+                    <li ng-repeat="errorMessage in modelStatesErrors">{{errorMessage}}</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <label>Name</label>
+                    </div>
+                    <div class="col-md-9" ng-class="{'has-error': contactForm.name.$dirty && contactForm.name.$invalid}">
+                        <input type="text" class="form-control" name="name" ng-model="contact.name" required />
+                        <span style="color:red" ng-show="contactForm.name.$dirty && contactForm.name.$invalid">
+                            <span ng-show="contactForm.name.$error.required">Name is required.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <label>Email</label>
+                    </div>
+                    <div class="col-md-9" ng-class="{'has-error': contactForm.email.$dirty && (contactForm.email.$invalid || contactForm.email.$error.email)}">
+                        <input type="email" name="email" class="form-control" ng-model="contact.email" required />
+                        <span style="color:red" ng-show="contactForm.email.$dirty && contactForm.email.$invalid">
+                            <span ng-show="contactForm.email.$error.required">Email is required.</span>
+                            <span ng-show="contactForm.email.$error.email">Invalid email address.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <label>Phone</label>
+                    </div>
+                    <div class="col-md-9" ng-class="{'has-error': contactForm.phone.$dirty && contactForm.phone.$invalid}">
+                        <input type="text" name="phone" class="form-control" ng-model="contact.phone" required ng-pattern="/^\d{0,12}$/"/>
+                        <span style="color:red" ng-show="contactForm.phone.$dirty && contactForm.phone.$invalid">
+                            <span ng-show="contactForm.phone.$error.required">Phone is required.</span>
+                            <span ng-show="contactForm.phone.$error.pattern">Invalid phone number.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <label>Address</label>
+                    </div>
+                    <div class="col-md-9" ng-class="{'has-error': contactForm.address.$dirty && contactForm.address.$invalid}">
+                        <input type="text" name="address" class="form-control" ng-model="contact.address" required/>
+                        <span style="color:red" ng-show="contactForm.address.$dirty && contactForm.address.$invalid">
+                            <span ng-show="contactForm.address.$error.required">Address is required.</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="onSave()" ng-disabled="!contactForm.$valid">Save</button>
+        <button class="btn btn-default" ng-click="onCancel()">Cancel</button>
+    </div>
+</div>

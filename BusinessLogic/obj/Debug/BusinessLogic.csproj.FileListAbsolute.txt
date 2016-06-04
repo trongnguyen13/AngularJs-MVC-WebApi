@@ -1,0 +1,15 @@
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\DataAccess.dll
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\EntityFramework.dll
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\Model.dll
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\System.Linq.Dynamic.dll
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\DataAccess.pdb
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\Model.pdb
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\EntityFramework.xml
+D:\Code\TestAngularjs\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\TestAngularjs\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Code\TestAngularjs\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\Code\TestAngularjs\BusinessLogic\obj\Debug\BusinessLogic.pdb
